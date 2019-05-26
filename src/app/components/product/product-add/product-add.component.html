@@ -1,0 +1,31 @@
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="20">
+  <div class="mat-elevation-z8">
+
+    <div fxFlex>
+    </div>
+
+    <div fxFlex>
+      <form [formGroup]="productFG" novalidate>
+        <mat-progress-bar class="full-width-field" *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+        <mat-form-field>
+          <input matInput required type="text" formControlName="Description" placeholder="Description" />
+          <mat-error *ngIf="descriptionValidate()">
+            Description is required
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput required type="number" formControlName="Price" placeholder="Price" />
+          <mat-error *ngIf="priceValidate()">
+            Price is required
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" class="btn full-width-field" (click)="save()">Save</button>
+      </form>
+
+    </div>
+
+    <div fxFlex>
+    </div>
+
+  </div>
+</div>

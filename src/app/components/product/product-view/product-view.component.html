@@ -1,0 +1,33 @@
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.xs="20">
+    <div class="mat-elevation-z8">
+  
+      <div fxFlex>
+      </div>
+      <div fxFlex *ngIf="!loading">
+          <hr>
+          <mat-form-field class="full-width-field">
+            <input matInput disabled type="text" [ngModel]="product.Description" placeholder="Description" />
+          </mat-form-field>
+
+          <mat-form-field class="full-width-field">
+            <input matInput disabled type="number" [ngModel]="product.Price" placeholder="Price" />
+          </mat-form-field>
+
+          <mat-form-field class="full-width-field">
+              <input matInput disabled type="text" [ngModel]="product.Created.toDate() | date: 'dd/MM/yyyy'" placeholder="Date Created" />
+            </mat-form-field>
+
+            <mat-form-field class="full-width-field">
+                <input matInput disabled type="text" [ngModel]="product.Updated.toDate() | date: 'dd/MM/yyyy'" placeholder="Date Updated" />
+              </mat-form-field>
+
+          <button mat-raised-button color="primary" class="btn full-width-field" [routerLink]="['/products']">Back to list</button>
+  <hr>
+      </div>
+  
+      <div fxFlex>
+      </div>
+  
+    </div>
+  </div>
+  

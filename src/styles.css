@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+:root {
+  --main-primary: #3f51b5; 
+  --main-secondary: #ff4081; 
+}
+
+.btn {
+  border: 2px solid var(--main-primary) !important;
+  background-color: white !important;
+  color : var(--main-secondary) !important;
+}
+
+
+.grid-container {
+    margin: 20px;
+    background-color: white;
+  }
+
+  .full-width-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ table {
+  width: 100%;
+}
+
+.example-first-header-row th {
+  border-bottom: none;
+}
+
+.example-second-header-row {
+  font-style: italic;
+}
+
+.example-first-footer-row {
+  font-weight: bold;
+}
+
+.example-second-footer-row td {
+  color: #900000;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: #900000;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.example-container form {
+  margin-bottom: 20px;
+}
+
+.example-container form > * {
+  margin: 5px 0;
+}
+
+.example-container .mat-radio-button {
+  margin: 0 12px;
+}
+
+
+
