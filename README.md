@@ -1,3 +1,7 @@
+# Working Demo
+
+Check out the [DEMO](https://angularfirestorecrud-12345.firebaseapp.com/)
+
 # AngularFirestoreCrud
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
